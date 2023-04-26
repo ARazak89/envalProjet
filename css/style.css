@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  /* color: rgb(235, 235, 27); */
+}
+.btn-bout{
+  background: #4A96A6;
+  color: #fff;
+  text-decoration: none;
+
+  height: 3rem;
+}
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  z-index: 1000;
+  position:fixed;
+  left: 250px;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#sidebar .nav a{
+  background: none;
+  color: #313131;
+  font-size: 18px;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+
+#sidebar .nav li:hover{
+  background: none;
+  background-color: #E7F9FD;
+  border-radius: 10px;
+}
+#sidebar .nav li:active{
+  background: none;
+  background-color:#E7F9FD;
+  border-radius: 10px;
+}
+
+#sidebar .nav a i{
+  margin-right: 26px;
+  
+}
+
+#note1{
+  position: absolute;
+ top: 17rem;
+ left: 9rem;
+}
+#note2{
+  position: absolute;
+ top: 17rem;
+ left: 9rem;
+}
+
+/* table */
+#tab1 thead tr th td{ border:0 ou none; }
+#tab1 tbody tr  td { border: 1px solid #fff; }
+#tab1 tbody th { border: 1px solid #fff; }
+
+#tab2 thead tr th td{ border:0 ou none; }
+#tab2 tbody tr  td { border: 1px solid #fff; }
+#tab2 tbody th { border: 1px solid #fff; }
+
+/* gradiant */
+#grad1{
+  height: 10rem;
+  width: 30rem;
+  background-color: green;
+  background-image: linear-gradient(to right, #5b9c02, #868d00, #ad7700, #d05600, #eb1212);
+}
+
+/* #btn_menu:active #sidebar{
+  display: block;
+} */
+
+  /* resp */
+  @media only screen and (max-width: 768px) {
+    #sidebar{
+      width: 60px;
+    }
+    #viewport{
+      padding-left: 60px;
+  } 
+  }
+  @media only screen and (max-width: 600px) {
+    #viewport{
+      padding-left: 0px;
+  } 
+    
+   #progress{
+    display: flex;
+    flex-direction: column;
+   }
+   #donut1 div{
+    margin-right: 0;
+   }
+   #donut2{
+    margin-top: 2rem;
+   }
+   
+   #sidebar {
+   display: none;
+  }
+  .table{
+    font-size: 10px;
+  }
+  .table .btn{
+    font-size: 10px;
+  }
+  #sidebar:target{
+    display: block;
+  }
+  .gv-table {
+    overflow-x: scroll;
+}
+
+  }
+
+ 
+  
