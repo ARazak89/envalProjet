@@ -112,19 +112,19 @@
     <div class="container">
 
       <!-- chart-Half-Circle -->
-      <div class="container d-flex mt-5 " id="progress" style="justify-content: center;">
-        <div class="text-center col-sm-6" id="donut1">
-          <div style="margin-right: 5rem;">
-            <h3>Analyse positive</h3>
+      <div class="container d-flex mt-5 " id="progress" >
+        <div class="text-center " id="donut1">
+          <div style="margin-right: 5rem;" id="don1">
+            <h5>Analyse positive</h5>
             <div class="container-fluid "
-              style="height: 25rem; width: 20rem; text-align: center; border-radius: 10px;background: rgb(60, 132, 149);position: relative;"
+              style="height: 15rem; width: 12rem; text-align: center; border-radius: 10px;background: rgb(60, 132, 149);position: relative;"
               id="Pos1">
               <span">
-                <i class="bi bi-lightning" style="font-size: 3rem;"></i><br>
+                <i class="bi bi-lightning-charge-fill" style="font-size: 2rem;color: #fff;"></i><br>
               </span>
               
               <span style="color: #fff;">
-                <h3>Positive</h3>
+                <h4>Positive</h4>
               </span>
               <span id="note1" style="color: #fff;">
                 <h2>91%</h2>
@@ -177,17 +177,17 @@
           </div>
           <!-- semi donut -->
         </div>
-        <div class="text-center col-sm-5" id="donut2">
-          <h3> Analyse Négative</h3>
+        <div class="justify-content-center" id="donut2">
+          <h5> Analyse Negative</h5>
           <div class="container-fluid"
-            style="height: 25rem; width: 20rem;text-align: center; border-radius: 10px;background: #fff; position: relative;"
+            style="height: 15rem; width: 12rem;text-align: center; align-items: center; border-radius: 10px;background: #fff; position: relative;border: 2px solid #4A96A6;"
             id="pos2">
-            <span>
-              <i class="bi bi-droplet" style="font-size: 3rem;"></i><br>
-            </span>
+            <div class="" id="droplet">
+              <i class="bi bi-droplet-fill" style="font-size: 2rem;color:#4A96A6"></i><br>
+            </div>
             
             <span>
-              <h3>Négative</h3>
+              <h4>Négative</h4>
             </span>
             <span id="note2">
               <h2>9%</h2>
@@ -241,7 +241,7 @@
 
       <!-- chartbar -->
       <h2 class="mt-5">Analyse par mois</h2>
-      <div>
+      <div class="col-10">
         <canvas class="mt-5" id="myChartBar"></canvas>
       </div>
 
@@ -258,9 +258,7 @@
               data: [42, 34, 32, 53, 62, 63, 21, 60, 37, 50, 20, 43],
               backgroundColor: ['#fff'],
               hoverBackgroundColor: ['rgb(60, 132, 149)'],
-              barThickness: 20,
-
-
+              barThickness: 35,
             }]
           },
           options: {
@@ -273,6 +271,9 @@
               y: {
                 beginAtZero: true,
                 display: false,
+              },
+              x:{
+                grid:{color:"white"},
               }
             }
           }

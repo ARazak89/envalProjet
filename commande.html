@@ -9,7 +9,7 @@
   <!-- bootstrap-icons -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
    <link rel="stylesheet" href="css/style.css">
-    <title>Facture</title>
+    <title>Commande</title>
 </head>
 <body style="background-color:rgb(199, 229, 235);">
     <div id="viewport">
@@ -104,10 +104,10 @@ btn_menu.addEventListener("click", () => {
 
         <!-- Content -->
        
-          <div class="container-fluid bg-white ms-2 overflow-scroll" style="margin-top:10px;border-radius: 10px;">
+          <div class="container-fluid bg-white ms-2 overflow-scroll col-md-12 col-sm-12" style="margin-top:10px;border-radius: 10px;">
             <br><br><br>
-             
-                <table class="table overflow-scroll:sm-auto" style="text-align: center;color: rgb(144, 143, 142)">
+             <div class="col-11 m-auto">
+                <table class="table overflow-scroll:sm-auto " style="text-align: center;color: rgb(144, 143, 142)" id="com">
                   <thead>
                     <tr style="border-top: 0.5px solid;">
                       <th><h3>Commande</h3></th>
@@ -115,7 +115,7 @@ btn_menu.addEventListener("click", () => {
                       <th></th>
                       <th></th>
                       <th colspan="3">
-                        <div class="input rounded">
+                        <div class="input rounded py-2">
                           <input type="search" class="form-control rounded" placeholder=" &#xF52A;" aria-label="Search" aria-describedby="search-addon" style="border-radius: 20px; font-family:'bootstrap-icons' ;background:rgb(228, 224, 224);"/>    
 
                       </div>
@@ -135,67 +135,67 @@ btn_menu.addEventListener("click", () => {
                         <td colspan="2"style="border-right:0.5px solid;">Enval</td>
                         <td style="border-right:0.5px solid;">10/03/2023</td>
                         <td style="border-right:0.5px solid black; color: red;">En cours</td>
-                        <td colspan="2"><button type="button" class="btn btn-lg"style="background: #4A96A6; color:#fff">VOIR</button></td>
+                        <td colspan="2"><button type="button" class="btn btn-md"style="background: #4A96A6; color:#fff">VOIR</button></td>
                       </tr>
                       <tr>
                         <td style="border-right:0.5px solid;">00013</td>
                         <td colspan="2"style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
-                        <td colspan="2"><button type="button" class="btn   btn-lg"style="background: #4A96A6; color:#fff">VOIR</button></td>
+                        <td colspan="2"><button type="button" class="btn   btn-md"style="background: #4A96A6; color:#fff">VOIR</button></td>
                       </tr>
                       <tr>
                         <td style="border-right:0.5px solid;">00013</td>
                         <td colspan="2"style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
-                        <td colspan="2"><button type="button" class="btn   btn-lg"style="background: #4A96A6; color:#fff">VOIR</button></td>
+                        <td colspan="2"><button type="button" class="btn   btn-md"style="background: #4A96A6; color:#fff">VOIR</button></td>
                       </tr>
                       <tr>
                         <td style="border-right:0.5px solid;">00015</td>
                         <td colspan="2"style="border-right:0.5px solid;"></td>
                        <td style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
-                        <td colspan="2"><button type="button" class="btn   btn-lg"style="background: #4A96A6; color:#fff">VOIR</button></td>
+                        <td colspan="2"><button type="button" class="btn   btn-md"style="background: #4A96A6; color:#fff">VOIR</button></td>
                       </tr>
                       <tr>
                         <td style="border-right:0.5px solid;">00016</td>
                         <td colspan="2"style="border-right:0.5px solid;"></td>
                        <td style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
-                        <td colspan="2"><button type="button" class="btn   btn-lg"style="background: #4A96A6; color:#fff">VOIR</button></td>
+                        <td colspan="2"><button type="button" class="btn   btn-md"style="background: #4A96A6; color:#fff">VOIR</button></td>
                       </tr>
                       <tr>
                         <td style="border-right:0.5px solid;">00117</td>
                         <td colspan="2"style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
-                        <td colspan="2"><button type="button" class="btn   btn-lg"style="background: #4A96A6; color:#fff">VOIR</button></td>
+                        <td colspan="2"><button type="button" class="btn   btn-md"style="background: #4A96A6; color:#fff">VOIR</button></td>
                       </tr>
                       <tr>
                         <td style="border-right:0.5px solid;">00118</td>
                         <td colspan="2"style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
-                        <td colspan="2"><button type="button" class="btn   btn-lg"style="background: #4A96A6; color:#fff">VOIR</button></td>
+                        <td colspan="2"><button type="button" class="btn   btn-md"style="background: #4A96A6; color:#fff">VOIR</button></td>
                       </tr>
                       <tr>
                         <td style="border-right:0.5px solid;">00119</td>
                         <td colspan="2"style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
-                        <td colspan="2"><button type="button" class="btn   btn-lg"style="background: #4A96A6; color:#fff">VOIR</button></td>
+                        <td colspan="2"><button type="button" class="btn   btn-md"style="background: #4A96A6; color:#fff">VOIR</button></td>
                       </tr>
                       <tr>
                         <td style="border-right:0.5px solid;">00120</td>
                         <td colspan="2"style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
                         <td style="border-right:0.5px solid;"></td>
-                        <td colspan="2"><button type="button" class="btn   btn-lg"style="background: #4A96A6; color:#fff">VOIR</button></td>
+                        <td colspan="2"><button type="button" class="btn   btn-md"style="background: #4A96A6; color:#fff">VOIR</button></td>
                       </tr>
                   </tbody>
                 </table>
-              
+              </div> 
           </div>
         </div>
       <!-- </div> -->

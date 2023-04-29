@@ -52,6 +52,7 @@ body {
   font-size: 18px;
   padding: 5px 30px;
   text-decoration: none;
+  width:215px ;
 }
 
 #sidebar .nav li:hover{
@@ -59,26 +60,38 @@ body {
   background-color: #E7F9FD;
   border-radius: 10px;
 }
-#sidebar .nav li:active{
-  background: none;
+/* #sidebar .nav li:active{
+  background: #E7F9FD;
   background-color:#E7F9FD;
   border-radius: 10px;
-}
+} */
 
 #sidebar .nav a i{
   margin-right: 26px;
   
 }
-
+#pos2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#droplet{
+  margin-top: 2rem;
+  background-color: #cbf0f8;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  
+}
 #note1{
   position: absolute;
- top: 17rem;
- left: 9rem;
+ top: 11rem;
+ left: 4rem;
 }
 #note2{
   position: absolute;
- top: 17rem;
- left: 9rem;
+ top: 11rem;
+ left: 5rem;
 }
 
 /* table */
@@ -93,7 +106,7 @@ body {
 /* gradiant */
 #grad1{
   height: 10rem;
-  width: 30rem;
+  width: 22rem;
   background-color: green;
   background-image: linear-gradient(to right, #5b9c02, #868d00, #ad7700, #d05600, #eb1212);
 }
@@ -107,11 +120,19 @@ body {
     #sidebar{
       width: 60px;
     }
+    #sidebar .nav a{
+      background: none;
+      color: #313131;
+      font-size: 18px;
+      padding: 0px 20px;
+      text-decoration: none;
+      width:40px ;
+    }
     #viewport{
       padding-left: 60px;
   } 
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 550px) {
     #viewport{
       padding-left: 0px;
   } 
@@ -122,11 +143,15 @@ body {
    }
    #donut1 div{
     margin-right: 0;
+
    }
    #donut2{
     margin-top: 2rem;
+    margin-left: 4rem;
    }
-   
+   #pos2{
+    margin: 0;
+   }
    #sidebar {
    display: none;
   }
@@ -142,8 +167,34 @@ body {
   .gv-table {
     overflow-x: scroll;
 }
+#com th, #com td{
+  font-size: 9px;
+  padding: 0;
+}
+/* #com table tr th:first-child{
+  width: 90px;
+} */
+#tab1 th,#tab1 td{
+  font-size: 9px;
+  padding: 2px;
+}
+#tab2 th,#tab2 td{
+  font-size: 9px;
+  padding: 2px;
+}
+#tab3 th,#tab3 td{
+  font-size: 9px;
+  padding: 2px;
+}
 
   }
-
- 
+  @media only screen and (max-width: 330px) {
+    #donut2{
+      margin-top: 2rem;
+      /* margin-left: 4rem; */
+     }
+     #donut1 div{
+      margin-left: 2rem;
   
+     }
+  }
